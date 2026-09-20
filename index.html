@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>GORILAZ Consulting</title>
 
 <style>
-nav{
-    margin-bottom:50px;
-}
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-size:18px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#60a5fa;
-}
 body{
     margin:0;
     font-family:Arial,sans-serif;
@@ -28,11 +16,24 @@ body{
 }
 
 header{
-    #homeHome #servicesDienstleistungen #preisePreise #aboutÜber Uns #kontaktKontakt
-    background:linear-gradient(135deg,#020817,#051b4d,#0b1f6d);
+    background:linear-gradient(
+    135deg,
+    #020817,
+    #051b4d,
+    #0b1f6d);
+
     color:white;
     text-align:center;
     padding:120px 20px;
+    position:relative;
+}
+
+.menu{
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:38px;
+    color:white;
 }
 
 h1{
@@ -42,11 +43,10 @@ h1{
 
 header p{
     font-size:22px;
-    margin-top:15px;
 }
 
 section{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
     padding:40px 20px;
 }
@@ -56,7 +56,7 @@ section{
     border-radius:20px;
     padding:30px;
     margin-bottom:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .card h2{
@@ -71,9 +71,25 @@ ul li{
     display:inline-block;
     background:#2563eb;
     color:white;
-    padding:12px 25px;
-    border-radius:10px;
     text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    margin:5px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#1d4ed8;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    text-decoration:none;
+    margin:10px;
+    font-size:18px;
 }
 
 footer{
@@ -91,6 +107,10 @@ footer{
 
 <header>
 
+<div class="menu">
+☰
+</div>
+
 <h1>GORILAZ Consulting</h1>
 
 <p>
@@ -103,12 +123,12 @@ Transport • Versicherung • Zulassung • Administration
 
 <div class="card">
 
-<h2>Über uns</h2>
+<h2>Über Uns</h2>
 
 <p>
-Wir unterstützen Privatpersonen und Unternehmen bei
-Transportfragen, Fahrzeugzulassungen,
-Versicherungsanfragen und administrativen Dienstleistungen.
+Wir unterstützen Privatpersonen und Unternehmen
+bei Transport, Fahrzeugzulassung,
+Versicherungsunterstützung und administrativen Dienstleistungen.
 </p>
 
 </div>
@@ -118,9 +138,74 @@ Versicherungsanfragen und administrativen Dienstleistungen.
 <h2>Dienstleistungen</h2>
 
 <ul>
+
 <li>Transportberatung</li>
-<li>Stückgut-Service</li>
+
+<li>Stückgut Service</li>
+
 <li>Fahrzeugzulassungen</li>
-<li>Versicherungsunterstützung</li>
+
 <li>MFK Terminorganisation</li>
-<li>Administrative Unterstützung<
+
+<li>Versicherungsunterstützung</li>
+
+<li>Administrative Unterstützung</li>
+
+<li>Dokumentenservice</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Preise</h2>
+
+<p>Erstberatung: CHF 50</p>
+
+<p>Fahrzeugzulassung: ab CHF 80</p>
+
+<p>Versicherungsunterstützung: ab CHF 40</p>
+
+<p>Administration: CHF 60 / Stunde</p>
+
+</div>
+
+<div class="card">
+
+<h2>Kontakt</h2>
+
+<p>📞 +41 78 642 59 19</p>
+
+<p>📧 info@gorilaz-consulting.ch</p>
+
+tel:+41786425919
+📞 Anrufen
+</a>
+
+https://wa.me/41786425919
+💬 WhatsApp
+</a>
+
+<div class="social">
+
+#🔗 LinkedIn</a>
+
+#📘 Facebook</a>
+
+#📷 Instagram</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2025 GORILAZ Consulting
+
+</footer>
+
+</body>
+</html>
