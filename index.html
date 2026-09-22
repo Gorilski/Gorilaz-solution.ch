@@ -1,134 +1,138 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>GORILAZ Consulting</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f6fa;
+font-family:Arial,sans-serif;
+background:#f4f6fa;
+color:#222;
 }
 
 header{
-    background:linear-gradient(
-    135deg,
-    #020817,
-    #051b4d,
-    #0b1f6d);
+background:linear-gradient(
+135deg,
+#020817,
+#041c4f,
+#0b1f6d
+);
 
-    color:white;
-    text-align:center;
-    padding:120px 20px;
-    position:relative;
+color:white;
+padding:90px 25px;
+text-align:center;
+position:relative;
 }
 
 .menu{
-    position:absolute;
-    top:20px;
-    right:25px;
-    font-size:38px;
-    color:white;
+position:absolute;
+top:20px;
+right:25px;
+font-size:32px;
+cursor:pointer;
 }
 
 h1{
-    font-size:60px;
-    margin:0;
+font-size:42px;
+margin-bottom:10px;
 }
 
-header p{
-    font-size:22px;
+.subtitle{
+font-size:16px;
+opacity:0.9;
 }
 
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
 }
 
 .card{
-    background:white;
-    border-radius:20px;
-    padding:30px;
-    margin-bottom:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+background:white;
+padding:25px;
+border-radius:16px;
+margin-bottom:20px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-.card h2{
-    color:#051b4d;
+h2{
+margin-bottom:15px;
+color:#0b1f6d;
+font-size:24px;
 }
 
-ul li{
-    margin-bottom:10px;
+ul{
+padding-left:20px;
 }
 
-.button{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    padding:12px 22px;
-    border-radius:10px;
-    margin:5px;
-    font-weight:bold;
+li{
+margin-bottom:8px;
 }
 
-.button:hover{
-    background:#1d4ed8;
+.btn{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:12px 20px;
+border-radius:10px;
+text-decoration:none;
+margin-top:10px;
+margin-right:8px;
 }
 
 .social{
-    margin-top:20px;
+margin-top:15px;
 }
 
 .social a{
-    text-decoration:none;
-    margin:10px;
-    font-size:18px;
+text-decoration:none;
+margin-right:10px;
 }
 
 footer{
-    background:#051b4d;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#051b4d;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 
-<div class="menu">
-☰
-</div>
+<div class="menu">☰</div>
 
 <h1>GORILAZ Consulting</h1>
 
-<p>
+<p class="subtitle">
 Transport • Versicherung • Zulassung • Administration
 </p>
 
 </header>
 
-<section>
+<div class="container">
 
 <div class="card">
 
 <h2>Über Uns</h2>
 
 <p>
-Wir unterstützen Privatpersonen und Unternehmen
-bei Transport, Fahrzeugzulassung,
-Versicherungsunterstützung und administrativen Dienstleistungen.
+Ihr Partner für Transport, Fahrzeugzulassungen,
+Versicherungsunterstützung und administrative Dienstleistungen.
 </p>
 
 </div>
@@ -138,74 +142,4 @@ Versicherungsunterstützung und administrativen Dienstleistungen.
 <h2>Dienstleistungen</h2>
 
 <ul>
-
-<li>Transportberatung</li>
-
-<li>Stückgut Service</li>
-
-<li>Fahrzeugzulassungen</li>
-
-<li>MFK Terminorganisation</li>
-
-<li>Versicherungsunterstützung</li>
-
-<li>Administrative Unterstützung</li>
-
-<li>Dokumentenservice</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Preise</h2>
-
-<p>Erstberatung: Kostenlos</p>
-
-<p>Fahrzeugzulassung: ab CHF 80</p>
-
-<p>Versicherungsunterstützung: ab CHF 40</p>
-
-<p>Administration: CHF 60 / Stunde</p>
-
-</div>
-
-<div class="card">
-
-<h2>Kontakt</h2>
-
-<p>📞 +41 78 642 59 19</p>
-
-<p>📧 info@gorilaz-consulting.ch</p>
-
-tel:+41786425919
-📞 Anrufen
-</a>
-
-https://wa.me/41786425919
-💬 WhatsApp
-</a>
-
-<div class="social">
-
-#🔗 LinkedIn</a>
-
-#📘 Facebook</a>
-
-#📷 Instagram</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2025 GORILAZ Consulting
-
-</footer>
-
-</body>
-</html>
+<li>
