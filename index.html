@@ -58,7 +58,9 @@ margin-bottom:4px;
 
 .brand p{
 font-size:12px;
-opacity
+opacity:.9;
+}
+
 .lang-container {
 display: flex;
 flex-direction: column;
@@ -66,7 +68,7 @@ gap: 12px;
 }
 
 .lang-btn {
-font-size: 18px;
+font-size: 26px;
 cursor: pointer;
 user-select: none;
 line-height: 1;
@@ -200,6 +202,22 @@ display: block;
       <p>✅ Erstberatung kostenlos</p>
       <p>✅ Individuelle Offerte nach Bedarf</p>
     </div>
+
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>📞 +41 78 642 59 19</p>
+      <p>📧 info@gorilaz-consulting.ch</p>
+
+      <a class="contact-link wa-style" href="https://wa.me" target="_blank">
+        <span class="icon-box">💬</span>
+        <span>WhatsApp</span>
+      </a>
+
+      <a class="contact-link li-style" href="https://linkedin.com" target="_blank">
+        <span class="icon-box">🔗</span>
+        <span>LinkedIn</span>
+      </a>
+    </div>
   </div>
 
   <div id="content-mk" class="lang-section">
@@ -226,24 +244,22 @@ display: block;
       <p>✅ Прва консултација бесплатно</p>
       <p>✅ Индивидуална понуда според потребите</p>
     </div>
-  </div>
 
-  <div class="card">
-    <h2 id="title-contact-de" class="lang-section active">Kontakt</h2>
-    <h2 id="title-contact-mk" class="lang-section">Контакт</h2>
-    
-    <p>📞 +41 78 642 59 19</p>
-    <p>📧 info@gorilaz-consulting.ch</p>
+    <div class="card">
+      <h2>Контакт</h2>
+      <p>📞 +41 78 642 59 19</p>
+      <p>📧 info@gorilaz-consulting.ch</p>
 
-    <a class="contact-link wa-style" href="https://wa.me" target="_blank">
-      <span class="icon-box">💬</span>
-      <span>WhatsApp</span>
-    </a>
+      <a class="contact-link wa-style" href="https://wa.me" target="_blank">
+        <span class="icon-box">💬</span>
+        <span>Ватсап (WhatsApp)</span>
+      </a>
 
-    <a class="contact-link li-style" href="https://linkedin.com" target="_blank">
-      <span class="icon-box">🔗</span>
-      <span>LinkedIn</span>
-    </a>
+      <a class="contact-link li-style" href="https://linkedin.com" target="_blank">
+        <span class="icon-box">🔗</span>
+        <span>Линкедин (LinkedIn)</span>
+      </a>
+    </div>
   </div>
 
 </div>
@@ -258,17 +274,13 @@ function toggleLanguage(lang) {
   document.getElementById('sub-mk').style.display = 'none';
   document.getElementById('content-de').style.display = 'none';
   document.getElementById('content-mk').style.display = 'none';
-  document.getElementById('title-contact-de').style.display = 'none';
-  document.getElementById('title-contact-mk').style.display = 'none';
 
   if (lang === 'DE') {
     document.getElementById('sub-de').style.display = 'block';
     document.getElementById('content-de').style.display = 'block';
-    document.getElementById('title-contact-de').style.display = 'block';
   } else if (lang === 'MK') {
     document.getElementById('sub-mk').style.display = 'block';
     document.getElementById('content-mk').style.display = 'block';
-    document.getElementById('title-contact-mk').style.display = 'block';
   }
 }
 </script>
