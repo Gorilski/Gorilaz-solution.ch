@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>GORILAZ Consulting</title>
 
 <style>
@@ -15,55 +14,62 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 background:#f4f6fa;
 color:#222;
 }
 
 header{
-background:linear-gradient(
-135deg,
-#020817,
-#071d55,
-#0b1f6d
-);
+background:linear-gradient(135deg,#020817,#071d55,#0b1f6d);
 color:white;
-text-align:center;
-padding:60px 20px;
+padding:25px;
+}
+
+.topbar{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
 }
 
 .logo{
-width:75px;
-height:75px;
-margin:auto;
-margin-bottom:15px;
-border-radius:50%;
-background:linear-gradient(
-135deg,
-#2563eb,
-#7c3aed
-);
+width:65px;
+height:65px;
+border-radius:14px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:38px;
+font-size:26px;
 font-weight:bold;
 color:white;
 }
 
-h1{
+.brand h1{
 font-size:24px;
-font-weight:600;
-margin-bottom:8px;
+margin-bottom:4px;
 }
 
-.subtitle{
-font-size:13px;
+.brand p{
+font-size:12px;
 opacity:.9;
 }
 
+.lang{
+font-size:14px;
+font-weight:bold;
+cursor:pointer;
+}
+
 .container{
-max-width:950px;
+max-width:1100px;
 margin:auto;
 padding:30px 20px;
 }
@@ -71,13 +77,13 @@ padding:30px 20px;
 .card{
 background:white;
 padding:22px;
-border-radius:15px;
-margin-bottom:18px;
-box-shadow:0 5px 18px rgba(0,0,0,.08);
+border-radius:14px;
+margin-bottom:20px;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
 }
 
 h2{
-font-size:17px;
+font-size:18px;
 color:#0b1f6d;
 margin-bottom:12px;
 }
@@ -85,35 +91,42 @@ margin-bottom:12px;
 p{
 font-size:13px;
 line-height:1.7;
-margin-bottom:8px;
+}
+
+li{
+font-size:13px;
+margin-bottom:7px;
 }
 
 ul{
 padding-left:20px;
 }
 
-li{
-font-size:13px;
-margin-bottom:8px;
-}
-
 .whatsapp{
 display:inline-block;
-padding:12px 18px;
 background:#25D366;
 color:white;
+padding:12px 18px;
 text-decoration:none;
-font-weight:bold;
 border-radius:10px;
-margin-top:10px;
+font-weight:bold;
+margin-top:12px;
 }
 
 .linkedin{
 display:inline-block;
-margin-left:12px;
+margin-left:15px;
 text-decoration:none;
-font-weight:bold;
 color:#0077B5;
+font-weight:bold;
+}
+
+.lang-content{
+display:none;
+}
+
+.lang-content.active{
+display:block;
 }
 
 footer{
@@ -126,84 +139,11 @@ margin-top:20px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 
-<div class="logo[G]
+<div class="topbar">
 
-GORILAZ Consulting
-
-                         WhatsApp
-                         LinkedIn</div>
-
-<h1>GORILAZ Consulting</h1>
-
-<p class="subtitle">
-Fahrzeugzulassung • Versicherungsunterstützung • Administration
-</p>
-
-<p class="subtitle">
-Регистрација на возила • Помош за осигурување • Административни услуги
-</p>
-
-</header>
-
-<div class="container">
-
-<div class="card">
-
-<h2>Über Uns / За Нас</h2>
-
-<p>
-GORILAZ Consulting unterstützt Privatpersonen und Unternehmen
-bei Fahrzeugzulassungen, Versicherungsanfragen,
-administrativen Dienstleistungen und Terminorganisation
-in der Schweiz.
-</p>
-
-<p>
-GORILAZ Consulting им помага на физички лица и компании
-со регистрација на возила, прашања поврзани со осигурување,
-административни услуги и организација на термини во Швајцарија.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Dienstleistungen / Услуги</h2>
-
-<ul>
-<li>Fahrzeugzulassungen / Регистрација на возила</li>
-<li>MFK Terminorganisation / Закажување MFK</li>
-<li>Versicherungsunterstützung / Помош околу осигурување</li>
-<li>Administrative Dienstleistungen / Административни услуги</li>
-<li>Dokumentenservice / Подготовка на документи</li>
-<li>Unterstützung bei Behördenkontakten / Комуникација со институции</li>
-<li>Individuelle Beratung / Индивидуални консултации</li>
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Preise / Цени</h2>
-
-<p>✅ Erstberatung: Kostenlos</p>
-<p>✅ Прва консултација: Бесплатно</p>
-
-<p>✅ Individuelle Offerte nach Bedarf</p>
-<p>✅ Индивидуална понуда според потребите</p>
-
-<p>✅ Transparente Preisgestaltung</p>
-<p>✅ Транспарентни цени</p>
-
-</div>
-
-<div class="card">
-
-<h2>Kontakt / Контакт</h2>
