@@ -62,9 +62,28 @@ font-size:12px;
 opacity:.9;
 }
 
-.lang{
-font-size:15px;
-font-weight:bold;
+/* Нови стилови за јазиците да се редат еден под друг со знамиња */
+.lang-container {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.lang-item {
+display: flex;
+align-items: center;
+gap: 6px;
+font-size: 14px;
+font-weight: bold;
+color: white;
+cursor: pointer;
+}
+
+.lang-item img {
+width: 20px;
+height: 15px;
+border-radius: 2px;
+object-fit: cover;
 }
 
 .container{
@@ -102,7 +121,6 @@ ul{
 padding-left:20px;
 }
 
-/* Нови чисти стилови за контакт линковите за да бидат убаво наредени еден под друг */
 .contact-link {
 display: flex;
 align-items: center;
@@ -158,8 +176,16 @@ Fahrzeugzulassung • Versicherung • Administration
 
 </div>
 
-<div class="lang">
-🇩🇪 | 🇲🇰
+<!-- ЈАЗИЦИ ЕДНО ПОД ДРУГО СО ЗНАМИЊА -->
+<div class="lang-container">
+  <div class="lang-item" onclick="show('DE')">
+    <img src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 5 3'><rect width='5' height='3' fill='black'/><rect width='5' height='2' y='1' fill='red'/><rect width='5' height='1' y='2' fill='gold'/></svg>" alt="DE">
+    <span>DE</span>
+  </div>
+  <div class="lang-item" onclick="show('MK')">
+    <img src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 8 4' fill='%23d20000'><rect width='8' height='4'/><g fill='%23ffe600'><path d='M0 0h1l7 4h-1zM0 4h1l7-4h-1zM3.5 0h1v4h-1zM0 1.5h8v1h-8z'/><circle cx='4' cy='2' r='1' stroke='%23d20000' stroke-width='.15'/><path d='M4 0l.4 1.3L5 1l-.3.9.9-.1-.8.5.8.4-.9.1.3.9-.6-.7-.4 1.3-.4-1.3-.6.7.3-.9-.9-.1.8-.4-.8-.5.9.1-.3-.9.6.3z'/></g></svg>" alt="MK">
+    <span>MK</span>
+  </div>
 </div>
 
 </div>
@@ -246,7 +272,7 @@ GORILAZ Consulting им помага на физички лица и компа�
 <p>📧 info@gorilaz-consulting.ch</p>
 
 <!-- WHATSAPP -->
-<a class="contact-link wa-style" href="https://wa.me/41786425919" target="_blank">
+<a class="contact-link wa-style" href="https://wa.me" target="_blank">
   <img src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%2325D366'><path d='M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.411 0 11.981 0c3.184.001 6.177 1.242 8.426 3.496 2.249 2.254 3.486 5.251 3.484 8.437-.004 6.649-5.355 11.998-11.927 11.998-2.006-.002-3.975-.506-5.717-1.464L0 24zm6.59-4.846c1.656.983 3.27 1.488 4.957 1.49 5.424 0 9.837-4.405 9.84-9.829.002-2.628-1.02-5.1-2.877-6.958C16.654 1.997 14.19 1.001 11.979 1c-5.431 0-9.844 4.407-9.847 9.831-.001 1.742.469 3.442 1.359 4.981L2.47 21.53l5.856-1.535zm9.646-6.19c-.27-.135-1.597-.788-1.845-.878-.248-.09-.429-.135-.61.135-.181.27-.7 1.04-.857 1.222-.158.181-.315.203-.585.068-.27-.135-1.14-.42-2.172-1.341-.803-.715-1.345-1.6-1.503-1.871-.158-.27-.017-.416.118-.551.121-.122.27-.315.405-.473.135-.158.18-.27.27-.45.09-.181.046-.338-.022-.473-.068-.135-.61-1.467-.836-2.012-.22-.53-.443-.459-.61-.467-.157-.008-.338-.01-.519-.01-.18 0-.473.068-.72.338-.248.27-.946.924-.946 2.253 0 1.33.967 2.614 1.102 2.794.135.18 1.902 2.904 4.609 4.072.644.278 1.147.444 1.54.568.647.206 1.236.177 1.701.108.518-.077 1.597-.653 1.822-1.284.225-.63.225-1.171.158-1.284-.068-.113-.248-.18-.518-.315z'/></svg>" alt="WhatsApp" style="width: 18px; height: 18px;">
   <span>WhatsApp</span>
 </a>
