@@ -1,14 +1,335 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GORILAZ Consulting</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f4f6fa;
+color:#222;
+}
+
+header{
+background:linear-gradient(135deg,#020817,#071d55,#0b1f6d);
+color:white;
+padding:25px;
+}
+
+.topbar{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:65px;
+height:65px;
+border-radius:14px;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:26px;
+font-weight:bold;
+color:white;
+}
+
+.brand h1{
+font-size:24px;
+margin-bottom:4px;
+}
+
+.brand p{
+font-size:12px;
+opacity:.9;
+}
+
+.lang{
+font-size:14px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px 20px;
+}
+
+.card{
+background:white;
+padding:22px;
+border-radius:14px;
+margin-bottom:20px;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+h2{
+font-size:18px;
+color:#0b1f6d;
+margin-bottom:12px;
+}
+
+p{
+font-size:13px;
+line-height:1.7;
+}
+
+li{
+font-size:13px;
+margin-bottom:7px;
+}
+
+ul{
+padding-left:20px;
+}
+
+.whatsapp{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:12px 18px;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin-top:12px;
+}
+
+.linkedin{
+display:inline-block;
+margin-left:15px;
+text-decoration:none;
+color:#0077B5;
+font-weight:bold;
+}
+
+.lang-content{
+display:none;
+}
+
+.lang-content.active{
+display:block;
+}
+
+footer{
+background:#051b4d;
+color:white;
+text-align:center;
+padding:18px;
+font-size:12px;
+margin-top:20px;
+}
+
+</style>
 </head>
 
 <body>
 
+<header>
+
+<div class="topbar">
+
+<div class="left">
+
+<div class="logo">
+GC
+</div>
+
+<div class="brand">
+
 <h1>GORILAZ Consulting</h1>
 
-<p>Test funktioniert.</p>
+<p>
+Fahrzeugzulassung • Versicherung • Administration
+</p>
+
+</div>
+
+</div>
+
+<div class="lang">
+
+<span onclick="showDE()">🇩🇪 DE</span> |
+<span onclick="showMK()">🇲🇰 MK</span>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div id="de" class="lang-content active">
+
+<div class="card">
+
+<h2>Über Uns</h2>
+
+<p>
+GORILAZ Consulting unterstützt Privatpersonen und Unternehmen bei Fahrzeugzulassungen,
+Versicherungsunterstützung, administrativen Dienstleistungen und Behördenkontakten.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Dienstleistungen</h2>
+
+<ul>
+<li>Fahrzeugzulassungen</li>
+<li>MFK Terminorganisation</li>
+<li>Versicherungsunterstützung</li>
+<li>Administrative Dienstleistungen</li>
+<li>Dokumentenservice</li>
+<li>Behördenkontakte</li>
+<li>Individuelle Beratung</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Preise</h2>
+
+<p>✅ Erstberatung kostenlos</p>
+
+<p>✅ Individuelle Offerte nach Bedarf</p>
+
+<p>✅ Transparente Preisgestaltung</p>
+
+</div>
+
+<div class="card">
+
+<h2>Kontakt</h2>
+
+<p>📞 +41 78 642 59 19</p>
+
+<p>📧 info@gorilaz-consulting.ch</p>
+
+<a class="whatsapp"
+href="https://wa.me/41786425919"
+target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="linkedin"
+href="https://www.linkedin.com/in/slobodan-yanevski-268986204"
+target="_blank">
+💼 LinkedIn
+</a>
+
+</div>
+
+</div>
+
+<div id="mk" class="lang-content">
+
+<div class="card">
+
+<h2>За Нас</h2>
+
+<p>
+GORILAZ Consulting им помага на физички лица и компании
+со регистрација на возила, осигурување,
+административни услуги и комуникација со институции.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Услуги</h2>
+
+<ul>
+<li>Регистрација на возила</li>
+<li>Закажување MFK</li>
+<li>Помош околу осигурување</li>
+<li>Административни услуги</li>
+<li>Подготовка на документи</li>
+<li>Комуникација со институции</li>
+<li>Индивидуални консултации</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Цени</h2>
+
+<p>✅ Прва консултација бесплатно</p>
+
+<p>✅ Понуда според потребите</p>
+
+<p>✅ Транспарентни цени</p>
+
+</div>
+
+<div class="card">
+
+<h2>Контакт</h2>
+
+<p>📞 +41 78 642 59 19</p>
+
+<p>📧 info@gorilaz-consulting.ch</p>
+
+<a class="whatsapp"
+href="https://wa.me/41786425919"
+target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="linkedin"
+href="https://www.linkedin.com/in/slobodan-yanevski-268986204"
+target="_blank">
+💼 LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2025 GORILAZ Consulting
+
+</footer>
+
+<script>
+
+function showDE(){
+document.getElementById("de").classList.add("active");
+document.getElementById("mk").classList.remove("active");
+}
+
+function showMK(){
+document.getElementById("mk").classList.add("active");
+document.getElementById("de").classList.remove("active");
+}
+
+</script>
 
 </body>
 </html>
