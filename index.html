@@ -6,7 +6,6 @@
 <title>GORILAZ Consulting</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -62,7 +61,7 @@ font-size:12px;
 opacity:.9;
 }
 
-/* Стилови за јазичните знамиња едно под друго */
+/* Јазични знамиња едно под друго */
 .lang-container {
 display: flex;
 flex-direction: column;
@@ -150,145 +149,148 @@ font-size:12px;
 margin-top:20px;
 }
 
+/* Класи за криење и прикажување на јазиците */
+.lang-section {
+display: none;
+}
+.lang-section.active {
+display: block;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-
 <div class="topbar">
-
 <div class="left">
-
-<div class="logo">
-GC
-</div>
-
+<div class="logo">GC</div>
 <div class="brand">
-
 <h1>GORILAZ Consulting</h1>
-
-<p>
-Fahrzeugzulassung • Versicherung • Administration
-</p>
-
+<p id="sub-de" class="lang-section active">Fahrzeugzulassung • Versicherung • Administration</p>
+<p id="sub-mk" class="lang-section">Регистрација на возила • Осигурување • Администрација</p>
+</div>
 </div>
 
-</div>
-
-<!-- САМО ЗНАМИЊА ЕДНО ПОД ДРУГО ПРЕКУ СИГУРЕН BASE64 КОД -->
+<!-- Копчиња со знамиња за менување јазик -->
 <div class="lang-container">
-  <div class="lang-item" onclick="show('DE')">
+  <div class="lang-item" onclick="changeLang('DE')">
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAKCAYAAACND4JbAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAADxJREFUOI1j/P//PwM1AAsWbMAw0A4Y8f//f0bS9DEwMDBgC5PVDCEwGjBqIHIgUfowjBpIdgMJchgWegAAhRkQ/T3wO3MAAAAASUVORK5CYII=" alt="Germany">
   </div>
-  <div class="lang-item" onclick="show('MK')">
+  <div class="lang-item" onclick="changeLang('MK')">
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAKCAYAAACND4JbAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGlJREFUOI2V0tEKwCAIRdF7av//Z3sxlE1Dr3NxhBDv6KiIeNbeG6PjWkQeM1N1NCIH5iO668Wd7GhmHpqyZ2+x1p45H9lTrLVH9q51i+ytmXl1vX7ZfF1d1z611v35qfW2/F/Wmjn/AhjWExH5z0F6AAAAAElFTkSuQmCC" alt="Macedonia">
   </div>
 </div>
-
 </div>
-
 </header>
 
 <div class="container">
 
-<div class="card">
+  <!-- ГЕРМАНСКИ БЛОК (СЕ ПРИКАЖУВА ПРВ) -->
+  <div id="content-de" class="lang-section active">
+    <div class="card">
+      <h2>🇩🇪 Über Uns</h2>
+      <p>GORILAZ Consulting unterstützt Privatpersonen und Unternehmen bei Fahrzeugzulassungen, Versicherungsunterstützung, administrativen Dienstleistungen und Behördenkontakten.</p>
+    </div>
 
-<h2>🇩🇪 Über Uns</h2>
+    <div class="card">
+      <h2>🇩🇪 Dienstleistungen</h2>
+      <ul>
+        <li>Fahrzeugzulassungen</li>
+        <li>MFK Terminorganisation</li>
+        <li>Versicherungsunterstützung</li>
+        <li>Administrative Dienstleistungen</li>
+        <li>Dokumentenservice</li>
+        <li>Behördenkontakte</li>
+        <li>Individuelle Beratung</li>
+      </ul>
+    </div>
 
-<p>
-GORILAZ Consulting unterstützt Privatpersonen und Unternehmen bei Fahrzeugzulassungen,
-Versicherungsunterstützung, administrativen Dienstleistungen und Behördenkontakten.
-</p>
+    <div class="card">
+      <h2>Preise</h2>
+      <p>✅ Erstberatung kostenlos</p>
+      <p>✅ Individuelle Offerte nach Bedarf</p>
+    </div>
+  </div>
 
-</div>
+  <!-- МАКЕДОНСКИ БЛОК (СКРИЕН НА ПОЧЕТОК) -->
+  <div id="content-mk" class="lang-section">
+    <div class="card">
+      <h2>🇲🇰 За Нас</h2>
+      <p>GORILAZ Consulting им помага на физички лица и компании со регистрација на возила, осигурување, административни услуги и комуникација со институции.</p>
+    </div>
 
-<div class="card">
+    <div class="card">
+      <h2>🇲🇰 Услуги</h2>
+      <ul>
+        <li>Регистрација на возила</li>
+        <li>Закажување MFK</li>
+        <li>Помош околу осигурување</li>
+        <li>Административни услуги</li>
+        <li>Подготовка на документи</li>
+        <li>Комуникација со институции</li>
+        <li>Индивидуални консултации</li>
+      </ul>
+    </div>
 
-<h2>🇩🇪 Dienstleistungen</h2>
+    <div class="card">
+      <h2>Цени</h2>
+      <p>✅ Прва консултација бесплатно</p>
+      <p>✅ Индивидуална понуда според потребите</p>
+    </div>
+  </div>
 
-<ul>
-<li>Fahrzeugzulassungen</li>
-<li>MFK Terminorganisation</li>
-<li>Versicherungsunterstützung</li>
-<li>Administrative Dienstleistungen</li>
-<li>Dokumentenservice</li>
-<li>Behördenkontakte</li>
-<li>Individuelle Beratung</li>
-</ul>
+  <!-- КОНТАКТ КАРТИЧКА (ИСТА ЗА ДВАТА ЈАЗИКА) -->
+  <div class="card">
+    <h2 id="title-contact-de" class="lang-section active">Kontakt</h2>
+    <h2 id="title-contact-mk" class="lang-section">Контакт</h2>
+    
+    <p>📞 +41 78 642 59 19</p>
+    <p>📧 info@gorilaz-consulting.ch</p>
 
-</div>
+    <!-- WHATSAPP -->
+    <a class="contact-link wa-style" href="https://wa.me" target="_blank">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%2325D366'><path d='M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.411 0 11.981 0c3.184.001 6.177 1.242 8.426 3.496 2.249 2.254 3.486 5.251 3.484 8.437-.004 6.649-5.355 11.998-11.927 11.998-2.006-.002-3.975-.506-5.717-1.464L0 24zm6.59-4.846c1.656.983 3.27 1.488 4.957 1.49 5.424 0 9.837-4.405 9.84-9.829.002-2.628-1.02-5.1-2.877-6.958C16.654 1.997 14.19 1.001 11.979 1c-5.431 0-9.844 4.407-9.847 9.831-.001 1.742.469 3.442 1.359 4.981L2.47 21.53l5.856-1.535zm9.646-6.19c-.27-.135-1.597-.788-1.845-.878-.248-.09-.429-.135-.61.135-.181.27-.7 1.04-.857 1.222-.158.181-.315.203-.585.068-.27-.135-1.14-.42-2.172-1.341-.803-.715-1.345-1.6-1.503-1.871-.158-.27-.017-.416.118-.551.121-.122.27-.315.405-.473.135-.158.18-.27.27-.45.09-.181.046-.338-.022-.473-.068-.135-.61-1.467-.836-2.012-.22-.53-.443-.459-.61-.467-.157-.008-.338-.01-.519-.01-.18 0-.473.068-.72.338-.248.27-.946.924-.946 2.253 0 1.33.967 2.614 1.102 2.794.135.18 1.902 2.904 4.609 4.072.644.278 1.147.444 1.54.568.647.206 1.236.177 1.701.108.518-.077 1.597-.653 1.822-1.284.225-.63.225-1.171.158-1.284-.068-.113-.248-.18-.518-.315z'/></svg>" alt="WhatsApp" style="width: 18px; height: 18px;">
+      <span>WhatsApp</span>
+    </a>
 
-<div class="card">
-
-<h2>🇲🇰 За Нас</h2>
-
-<p>
-GORILAZ Consulting им помага на физички лица и компании
-со регистрација на возила, осигурување,
-административни услуги и комуникација со институции.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>🇲🇰 Услуги</h2>
-
-<ul>
-<li>Регистрација на возила</li>
-<li>Закажување MFK</li>
-<li>Помош околу осигурување</li>
-<li>Административни услуги</li>
-<li>Подготовка на документи</li>
-<li>Комуникација со институции</li>
-<li>Индивидуални консултации</li>
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Preise / Цени</h2>
-
-<p>✅ Erstberatung kostenlos</p>
-
-<p>✅ Прва консултација бесплатно</p>
-
-<p>✅ Individuelle Offerte nach Bedarf</p>
-
-<p>✅ Индивидуална понуда според потребите</p>
-
-</div>
-
-<div class="card">
-
-<h2>Kontakt / Контакт</h2>
-
-<p>📞 +41 78 642 59 19</p>
-
-<p>📧 info@gorilaz-consulting.ch</p>
-
-<!-- WHATSAPP -->
-<a class="contact-link wa-style" href="https://wa.me" target="_blank">
-  <img src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%2325D366'><path d='M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.411 0 11.981 0c3.184.001 6.177 1.242 8.426 3.496 2.249 2.254 3.486 5.251 3.484 8.437-.004 6.649-5.355 11.998-11.927 11.998-2.006-.002-3.975-.506-5.717-1.464L0 24zm6.59-4.846c1.656.983 3.27 1.488 4.957 1.49 5.424 0 9.837-4.405 9.84-9.829.002-2.628-1.02-5.1-2.877-6.958C16.654 1.997 14.19 1.001 11.979 1c-5.431 0-9.844 4.407-9.847 9.831-.001 1.742.469 3.442 1.359 4.981L2.47 21.53l5.856-1.535zm9.646-6.19c-.27-.135-1.597-.788-1.845-.878-.248-.09-.429-.135-.61.135-.181.27-.7 1.04-.857 1.222-.158.181-.315.203-.585.068-.27-.135-1.14-.42-2.172-1.341-.803-.715-1.345-1.6-1.503-1.871-.158-.27-.017-.416.118-.551.121-.122.27-.315.405-.473.135-.158.18-.27.27-.45.09-.181.046-.338-.022-.473-.068-.135-.61-1.467-.836-2.012-.22-.53-.443-.459-.61-.467-.157-.008-.338-.01-.519-.01-.18 0-.473.068-.72.338-.248.27-.946.924-.946 2.253 0 1.33.967 2.614 1.102 2.794.135.18 1.902 2.904 4.609 4.072.644.278 1.147.444 1.54.568.647.206 1.236.177 1.701.108.518-.077 1.597-.653 1.822-1.284.225-.63.225-1.171.158-1.284-.068-.113-.248-.18-.518-.315z'/></svg>" alt="WhatsApp" style="width: 18px; height: 18px;">
-  <span>WhatsApp</span>
-</a>
-
-<!-- LINKEDIN -->
-<a class="contact-link li-style" href="https://linkedin.com" target="_blank">
-  <img src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%230077b5'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z'/></svg>" alt="LinkedIn" style="width: 18px; height: 18px;">
-  <span>LinkedIn</span>
-</a>
+    <!-- LINKEDIN -->
+    <a class="contact-link li-style" href="https://linkedin.com" target="_blank">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%230077b5'><path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z'/></svg>" alt="LinkedIn" style="width: 18px; height: 18px;">
+      <span>LinkedIn</span>
+    </a>
+  </div>
 
 </div>
 
 <footer>
-
 © 2025 GORILAZ Consulting
-
 </footer>
+
+<!-- ЈАВАСКРИПТ СКРИПТА ЗА МЕНУВАЊЕ НА ЈАЗИКОТ -->
+<script>
+function changeLang(lang) {
+  // Селектирај ги сите јазични елементи
+  const sections = document.querySelectorAll('.lang-section');
+  
+  sections.forEach(section => {
+    // Тргни ја активната класа за сите да се скријат
+    section.classList.remove('active');
+  });
+
+  if (lang === 'DE') {
+    // Прикажи ги само германските делови
+    document.getElementById('sub-de').classList.add('active');
+    document.getElementById('content-de').classList.add('active');
+    document.getElementById('title-contact-de').classList.add('active');
+  } else if (lang === 'MK') {
+    // Прикажи ги само македонските делови
+    document.getElementById('sub-mk').classList.add('active');
+    document.getElementById('content-mk').classList.add('active');
+    document.getElementById('title-contact-mk').classList.add('active');
+  }
+}
+</script>
 
 </body>
 </html>
