@@ -64,10 +64,16 @@ opacity:.9;
 
 .lang{
 display:flex;
-gap:12px;
-align-items:center;
+gap:10px;
+}
+
+.lang button{
+background:none;
+border:none;
+color:white;
 font-size:11px;
 font-weight:600;
+cursor:pointer;
 }
 
 .container{
@@ -109,16 +115,12 @@ margin-bottom:7px;
 display:inline-flex;
 justify-content:center;
 align-items:center;
-
 width:42px;
 height:42px;
-
 background:#25D366;
 color:white;
-
 border-radius:50%;
 text-decoration:none;
-
 font-size:20px;
 }
 
@@ -126,18 +128,13 @@ font-size:20px;
 display:inline-flex;
 justify-content:center;
 align-items:center;
-
 width:42px;
 height:42px;
-
 background:#0077B5;
 color:white;
-
 border-radius:50%;
 text-decoration:none;
-
 font-size:18px;
-
 margin-left:10px;
 }
 
@@ -153,7 +150,6 @@ margin-top:20px;
 </style>
 
 </head>
-
 <body>
 
 <header>
@@ -162,28 +158,18 @@ margin-top:20px;
 
 <div class="left">
 
-<div class="logo">
-G
-</div>
+<div class="logo">G</div>
 
 <div class="brand">
-
 <h1>GORILAZ Consulting</h1>
-
-<p>
-Fahrzeugzulassung • Versicherungen • Administration
-</p>
-
+<p>Fahrzeugzulassung • Versicherung • Administration</p>
 </div>
 
 </div>
 
 <div class="lang">
-
 <button onclick="showDE()">DE</button>
-
 <button onclick="showMK()">MK</button>
-
 </div>
 
 </div>
@@ -192,73 +178,7 @@ Fahrzeugzulassung • Versicherungen • Administration
 
 <div class="container">
 
-<div class="card">
-
-<h2>Über Uns</h2>
-
-<p>
-GORILAZ Consulting unterstützt Privatpersonen und Unternehmen
-bei Fahrzeugzulassungen, Versicherungsfragen,
-administrativen Dienstleistungen und Behördenkontakten.
-</p>
-
-</div>
+<div id="deContent">
 
 <div class="card">
-
-<h2>Dienstleistungen</h2>
-
-<ul>
-<li>Fahrzeugzulassungen</li>
-<li>MFK Terminorganisation</li>
-<li>Versicherungsunterstützung</li>
-<li>Administrative Dienstleistungen</li>
-<li>Dokumentenservice</li>
-<li>Behördenkontakte</li>
-<li>Individuelle Beratung</li>
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Preise</h2>
-
-<p>✅ Erstberatung kostenlos</p>
-
-<p>✅ Individuelle Offerte nach Bedarf</p>
-
-<p>✅ Transparente Preisgestaltung</p>
-
-</div>
-
-<div class="card">
-
-<h2>Kontakt</h2>
-
-<p>📞 +41 78 642 59 19</p>
-
-<p>📧 info@gorilaz-consulting.ch</p>
-
-<a class="whatsapp"
-href="https://wa.me/41786425919"
-target="_blank">
-💬
-</a>
-
-<a class="linkedin"
-href="https://www.linkedin.com/in/slobodan-yanevski-268986204"
-target="_blank">
-💼
-</a>
-
-</div>
-
-</div>
-
-<footer>
-© 2025 GORILAZ Consulting
-</footer>
-
-</body>
-</html>
+<h2>Über Uns</h2
